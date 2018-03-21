@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <script src="/frontend/dep/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="/frontend/dep/bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="/frontend/src/profile.js" charset="utf-8"></script>
+    <script src="/frontend/src/index.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/frontend/dep/bower_components/bootstrap/dist/css/bootstrap.min.css" charset="utf-8">
+    <style media="screen">
+      #rock {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition-property: width;
+        transition-druration: 1s;
+        transition-timing-function: linear;
+        transition-delay: 1s;
+
+      }
+
+      #rock :hover {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            我的大部分工作停留在iOS移动端开发当中，后端和前端都是有着兴趣的。时间和精力有限，广泛接触后，我打算深入的学习前端知识。
+
+          </p>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-8">
+          <div class="btn default-btn" id="rock"  >
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#rock").click( function() {
+          console.log("clicked me.");
+        });
+        index.main();
+      });
+    </script>
+  </body>
+</html>
